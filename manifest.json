@@ -1,0 +1,21 @@
+{
+    "nom": "Fidesio PWA",
+    "short_name": "SPWA",
+    "start_url": "index.html",
+    "portée" : "./",
+    "Icônes": [
+        {
+            "src": "apple-touch-icon.png",
+            "tailles": "192x192",
+            "type": "image / png"
+        },
+        {
+            "src": "apple-touch-icon.png",
+            "tailles": "512x512",
+            "type": "image / png"
+        }
+    ],
+    "theme_color": "#fff",
+    "background_color": "#000",
+    "affichage": "autonome"
+}

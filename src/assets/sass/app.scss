@@ -1,0 +1,151 @@
+// Variables
+@import 'variables';
+
+$breakpoints: (
+	'small': 991px,
+) !default;
+
+// Mixins
+@mixin mq($breakpoint) {
+	// If the key exists in the map
+	@if map-has-key($breakpoints, $breakpoint) {
+		// Prints a media query based on the value
+		@media (max-width: map-get($breakpoints, $breakpoint)) {
+			@content;
+		}
+	}
+	@else {
+		@warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+		+ "Available breakpoints are: #{map-keys($breakpoints)}.";
+	}
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+body {
+	font-family: $font-family-sans-serif;
+	background-color:$primary;
+}
+.clear {
+	clear: both;
+}
+h1 {
+	font-weight: 700;
+	font-size: 40px;
+	color:$primary;
+	}
+h2 {
+	font-weight: 400;
+	font-size: 18px;
+	color:$gris;
+	text-align:left;
+	border-bottom: 1px solid $gristresclair;
+	text-transform: capitalize;
+	margin-bottom:20px;
+
+		&:after {
+			width: 45px;
+			background: $bordeaux;
+			content: "";
+			margin: 10px 0 -1px;
+			display: block;
+			height: 1px;
+		}
+}
+h3 {
+	color:$orange;
+	font-size:12px;
+	font-weight: 400;
+}
+p {
+	font-weight: 400;
+	font-size: 18px;
+	color:$primary;
+	font-family: $font-family;
+}
+a {
+	font-weight: 400;
+	font-size: 16px;
+	color:$primary;
+}
+ul {list-style: none none;
+	margin: 0;
+	padding: 0;
+}
+li {
+	font-size:15px;
+}
+.module-cover {
+	background: url('../img/robot.jpg');
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+}
+.module-cover .container {
+	padding:5%;
+}
+.horizontal-list {
+	background:rgba(21, 21, 33, 0.9) ;
+}
+a.horizontal {
+    font-size:16px;
+    color:$gristresclair;
+}
+.breadcrumb {
+	background-color:transparent;
+}
+.breadcrumb li {
+	background: $bordeaux;
+	color:$primary;
+	padding:10px;
+	text-transform:uppercase;
+	transform: skew(-20deg);
+}
+.breadcrumb li:first-child {
+	background: $orange;
+	color:$primary;
+}
+footer {
+	background:$gris;
+	padding:12px 10px;
+}
+footer h6, footer h6 a {
+	font-size:13px;
+	color:$primary;
+	text-decoration: none;
+}
+footer h6 i {
+	color:$gristresclair;
+	font-family:Georgia, 'Times New Roman', Times, serif;
+	text-align:right;
+}
+.map-responsive {
+	overflow:hidden;
+	padding-bottom:50%;
+	position:relative;
+	height:0;
+	background:$gris;
+	}
+.map-responsive iframe {
+	left:0;
+	top:0;
+	height:100%;
+	width:100%;
+	position:absolute;
+	opacity:0.5;
+	
+	}
+@media (max-width: 991px) {
+    .module-cover {
+		background-position: center;
+	}
+}
