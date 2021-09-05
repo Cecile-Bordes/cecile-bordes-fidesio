@@ -15,7 +15,7 @@
                                         <li class="m-1"><span aria-current="page">industrie du futur</span></li>
                                     </ul>
                                   </nav>
-                                  <h1 class="title">Un printemps robotique à Arts et Métiers</h1>
+                                  <h1 class="title animated tada">Un printemps robotique à Arts et Métiers</h1>
                                   <p>Le campus Arts et Métiers de Lille, se positionne comme un acteur incontournable de la robotique par ses activités de formation, de recherche et de transfert technologique.</p>
                                   <a href="#"><i>> Lire plus</i></a>
                                   
@@ -34,8 +34,8 @@
                               <div class="col-md-8">
                                   <div class="row">
                                       <div class="col-md-3">
-                                          <h2 class="mt-5">école</h2>
-                                          <ul class="mb-2">
+                                          <h2 class="mt-5" @click='toggle = !toggle'>école</h2>
+                                          <ul class="mb-2" v-show='toggle'>
                                               <li>Présentation</li>
                                               <li>Réseau Arts et Métiers partenaires</li>
                                               <li>Une école engagée</li>
@@ -136,8 +136,6 @@ export default {
   data(){
     return {
         toggle: true,
-        
-        
       };
   },
   methods: {

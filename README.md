@@ -16,6 +16,7 @@ $ npm install vue bootstrap-vue
 $ npm install -g sass
 $ npm i sass-loader@10
 $ npm i vue-horizontal-list
+$ npm install animate.css --save
 $ cd src/assets/sass
 $ sass  --watch app.scss:app.css --style compressed
 $ npm run serve
