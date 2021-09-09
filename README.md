@@ -17,11 +17,11 @@ $ npm install -g sass
 $ npm i sass-loader@10
 $ npm i vue-horizontal-list
 $ npm install vue-animate-onscroll
+$ npm install aos --save
 $ cd src/assets/sass
 $ sass  --watch app.scss:app.css --style compressed
-$ npm run serve
 ```
-### Compiles and hot-reloads for development
+### Compiles
 ```
 npm run serve
 ```
@@ -31,10 +31,13 @@ npm run serve
 npm run build
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
+### Rendu
+
+
+[![ cecile-bordes-fidesio screenshot](page-destop.jpg)](https://Cecile-Bordes.github.io/cecile-bordes-fidesio/Rendu/)
+[![ cecile-bordes-fidesio screenshot](page-mobile.jpg)]
+
+
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).

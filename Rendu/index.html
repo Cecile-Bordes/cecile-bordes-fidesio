@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="icon" href="/favicon.ico">
+        <title>cecile-bordes-fidesio</title>
+        <!-- Favicons-->
+        <link rel="apple-touch-icon" href="./assets/img/apple-touch-icon.png">
+        <!-- Web Fonts-->
+        <!-- CSS only -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&amp;display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&amp;display=swap" rel="stylesheet"> 
+        <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+        <script type="application/ld+json">
+          {
+              "@context":"https://schema.org",
+              "@type":"Articles",
+              "mainEntityOfPage":{
+                  "@type":"WebPage",
+                  "@id":https://www.fidesio.com/
+              },
+              "headline":"Mon projet : fidesio !",
+              "description":"Mon projet",
+              "articleBody":"",
+              "publisher":{
+                  "@type":"Organization",
+                  "name":"fidesio",
+                  "logo":{
+                      "@type":"ImageObject",
+                      "url":"./assets/img/logo.png","height":"550","width":"500"
+                  }
+              },
+              "author":{
+                  "@type":"Person","name":"fidesio"
+              },
+              "datePublished":"2021-09-04T00:00:00Z","dateModified":"2021-09-05T00:00:00Z",
+              "image":{
+                  "@type":"ImageObject",
+                  "url":https://www.fidesio.com/
+              }
+          }
+      </script> 
+      <script type="application/ld+json">
+        [{
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "école",
+            "item": "https://www.fidesio.com/ecole"
+          },{
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Robotique",
+            "item": "https://www.fidesio.com/ecole/robotique"
+          },{
+            "@type": "ListItem",
+            "position": 3,
+            "name": "industrie du futur"
+          }]
+        }]
+        </script>
+      <link rel="manifest" href="/manifest.json">
+      <link href="/js/app.js" rel="preload" as="script"><link href="/js/chunk-vendors.js" rel="preload" as="script">
+      <link rel="stylesheet" href="../assets/sass/app.css">
+    <script charset="utf-8" src="/app.6f82fc98caf7a89ec8e6.hot-update.js"></script>
+  </head>
+  <body>
+    
+      <div id="app"></div>
+      <!-- Scripts-->
+      <script src="../src/assets/js/custom/jquery.min.js"></script>
+      <script src="./assets/js/custom/popper.min.js"></script>
+      <script src="./assets/js/bootstrap/bootstrap.min.js"></script>
+      <script type="text/javascript">
+        $(document).ready(function() {
+            $(".various").fancybox({
+                maxWidth	: 800,
+                maxHeight	: 600,
+                fitToView	: false,
+                width		: '70%',
+                height		: '70%',
+                autoSize	: false,
+                closeClick	: false,
+                openEffect	: 'none',
+                closeEffect	: 'none'
+            });
+        });
+        $(document).ready(function() {
+            var md = new MobileDetect(window.navigator.userAgent);
+
+            var $h1 = $('h1');
+
+            var animationFromTop = { transform: 'translateY(-30px)', transitionDuration: '500ms' };
+            var animationFromBottom = { transform: 'translateY(30px)', transitionDuration: '500ms' };
+            var animationFromLeft = { transform: 'translateX(-30px)', transitionDuration: '500ms' };
+            var animationFromRight = { transform: 'translateX(30px)', transitionDuration: '500ms' };
+            var noAnimation = { opacity: 1};
+
+            // IF MOBILE, NO ANIM
+            if (md.mobile() !== null) {
+                $h1.css(noAnimation);
+                return;
+            }
+
+            // ANIM DE BASE
+            $h1.css(animationFromTop);
+
+        });
+    </script>
+  <script type="text/javascript" src="../src/assets/js/chunk-vendors.js"></script><script type="text/javascript" src="../src/assets/js/app.js"></script></body>
+</html>
