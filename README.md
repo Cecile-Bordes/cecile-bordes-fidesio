@@ -40,4 +40,6 @@ npm run build
 
 
 ### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Voir [Configuration Reference](https://cli.vuejs.org/config/).
+Voir [Création page github](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site).
+
