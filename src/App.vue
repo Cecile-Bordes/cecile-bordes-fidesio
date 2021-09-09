@@ -54,7 +54,7 @@
                                               <li>L’école recrute</li>
                                               <li>Marchés publics</li>
                                           </ul>
-                                          <img class="mt-2 mb-5" src="./assets/img/institut-carnot.png" />
+                                          <img alt="Institut Carnot" class="mt-2 mb-5" src="./assets/img/institut-carnot.png" />
                                       </div>
                                       <div class="col-md-3" v-animate-onscroll.repeat="{down: 'animated flip'}">
                                           <h2 class="mt-5">Formation</h2>
@@ -70,7 +70,7 @@
                                               <li>MOOCS</li>
                                               <li>Vie étudiante</li>
                                           </ul>
-                                          <img class="mt-2 mb-5" src="./assets/img/paris-tech.png" />
+                                          <img alt="Paris Tech" class="mt-2 mb-5" src="./assets/img/paris-tech.png" />
                                       </div>
                                       <div class="col-md-3">
                                           <h2 class="mt-5">Recherche</h2>
@@ -80,7 +80,7 @@
                                               <li>Recherche partenariale</li>
                                               <li>Publications</li>
                                           </ul>
-                                          <img class="mt-2 mb-5" src="./assets/img/hesam.png" />
+                                          <img alt="Hesam" class="mt-2 mb-5" src="./assets/img/hesam.png" />
                                       </div>
                                       <div class="col-md-3">
                                           <h2 class="mt-5">Entreprise</h2>
