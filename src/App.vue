@@ -8,7 +8,7 @@
                       <div class="container">
                           <div class="row">
                               <div class="col-md-8">
-                                  <nav aria-label="Breadcrumb">
+                                  <nav aria-label="Breadcrumb" v-animate-onscroll="'animated flip'">
                                     <ul class="breadcrumb">
                                         <li class="m-1"><a href="">école</a></li>
                                         <li class="m-1"><a href="">Robotique</a></li>
@@ -26,13 +26,21 @@
                   <!-- Hero end-->
                   <section class="horizontal-list">
                       <image-three />
+                      <VueAnimateOnScroll />
                   </section>
                 </main>
                 <section>
                       <div class="container">
                           <div class="row">
                               <div class="col-md-8">
-                                  <div class="row">
+                                  <div class="row" data-aos="fade-up"
+                                    data-aos-offset="200"
+                                    data-aos-delay="50"
+                                    data-aos-duration="1000"
+                                    data-aos-easing="ease-in-out"
+                                    data-aos-mirror="true"
+                                    data-aos-once="false"
+                                    data-aos-anchor-placement="top-center">
                                       <div class="col-md-3">
                                           <h2 class="mt-5" @click='toggle = !toggle'>école</h2>
                                           <ul class="mb-2" v-show='toggle'>
@@ -48,7 +56,7 @@
                                           </ul>
                                           <img class="mt-2 mb-5" src="./assets/img/institut-carnot.png" />
                                       </div>
-                                      <div class="col-md-3">
+                                      <div class="col-md-3" v-animate-onscroll.repeat="{down: 'animated flip'}">
                                           <h2 class="mt-5">Formation</h2>
                                           <ul class="mb-2">
                                               <li>Bachelor de technologie</li>
@@ -127,11 +135,12 @@
 <script>
 
 import ImageThree from "./components/image-three";
-
+import VueAnimateOnScroll from 'vue-animate-onscroll';
 export default {
   name: 'App',
   components: {
     ImageThree,
+    VueAnimateOnScroll,
   },
   data(){
     return {
