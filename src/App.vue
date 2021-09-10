@@ -4,7 +4,7 @@
             <div class="wrapper">
                 <!-- Hero-->
                 <main class="module-cover">
-                  <section>
+                  <section class="main-content">
                       <div class="container">
                           <div class="row">
                               <div class="col-md-8">
